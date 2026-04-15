@@ -1,0 +1,134 @@
+:root {
+  color-scheme: dark light;
+  --bg: #0f1115;
+  --panel: #171a21;
+  --text: #e8eaef;
+  --muted: #9aa3b2;
+  --accent: #3b82f6;
+  --border: #2a3040;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC",
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.header {
+  padding: 1.5rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--border);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+
+.sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+#q {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+#q:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.err {
+  color: #f87171;
+  margin: 0 0 1rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: var(--panel);
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.card h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.card .hits {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.card .hits li {
+  margin: 0.35rem 0;
+}
+
+.card .hits a {
+  color: var(--accent);
+  word-break: break-all;
+}
+
+.mark {
+  background: rgba(59, 130, 246, 0.22);
+  color: var(--text);
+  padding: 0 0.15em;
+  border-radius: 4px;
+}
