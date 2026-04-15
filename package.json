@@ -1,0 +1,12 @@
+{
+  "name": "youtube-description-query",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
